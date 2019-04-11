@@ -8,7 +8,7 @@ var Port= 8080;
 var request = require('request');
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
-app.get('/',urlencodedParser,function(req,res){
+app.get('https://api.meetup.com/pro/qlik/events?photo-host=public&page=20&sig_id=258600237&sig=e46a3274373454a422cf66b7bd5641454c128b38',urlencodedParser,function(req,res){
     var request = require("request");
     
     var options = { method: 'GET',
